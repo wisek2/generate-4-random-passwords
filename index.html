@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@800&display=swap" rel="stylesheet">
+
+    <title>Random Password Generator</title>
+</head>
+
+<body>
+    <div class="innerBody">
+        <div class="upperHalf">
+            <div class="primaryTitle">
+                <h1>Generate a</h1>
+                <h1 id="primaryTitleGreen">random password</h1>
+            </div>
+            <p class="secondaryTitle">Never use an insecure password again.</p>
+            <div class="passwordButtonAndInputField">
+                <button id="generatePassword-btn" onclick=generatePassword()>
+                    <span id="lightningBolt"><img src="lightning.png" alt="white lightning bolt"></span>
+                    <span id="generatePasswordText">Generate Passwords</span>
+                </button>
+                <input type="text" id="passwordLength" name="passwordLength" placeholder="Enter password length">
+            </div>
+        </div>
+        <div id="horizontalBorder"></div>
+        <div class="bottomHalf">
+            <div class="fourPasswords">
+                <div class="columnOne">
+                    <button class="password-btn" id="passwordOne-el" onClick="copyPassword(this.id)"></button>
+                    <button class="password-btn" id="passwordTwo-el" onClick="copyPassword(this.id)"></button>
+                </div>
+                <div class="columnTwo">
+                    <button class="password-btn" id="passwordThree-el" onClick="copyPassword(this.id)"></button>
+                    <button class="password-btn" id="passwordFour-el" onClick="copyPassword(this.id)"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
